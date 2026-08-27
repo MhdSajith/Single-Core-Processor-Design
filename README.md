@@ -41,10 +41,9 @@ The ALU also generates a **Zero Flag** when the result is zero.
 
 The Control Unit is implemented using a Finite State Machine (FSM).
 
-```text
 FETCH → DECODE → EXECUTE → FETCH
 
-### 4.**Block Diagram**
+### 4.Block Diagram
                  +----------------+
                  |  Control Unit  |
                  |      FSM       |
@@ -67,3 +66,11 @@ FETCH → DECODE → EXECUTE → FETCH
                          |
                          ↓
                   Zero Flag
+
+   ### 5. Working Principle
+- The Control Unit starts in the FETCH state.
+- It moves to the DECODE state.
+- In the EXECUTE state, the required ALU operation is performed.
+- The Register File stores processor data and intermediate results.
+- The ALU produces the required arithmetic or logical result.
+-  The FSM returns to FETCH and repeats the process.  
