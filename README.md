@@ -43,3 +43,27 @@ The Control Unit is implemented using a Finite State Machine (FSM).
 
 ```text
 FETCH → DECODE → EXECUTE → FETCH
+
+### 4.Block Diagram
+                 +----------------+
+                 |  Control Unit  |
+                 |      FSM       |
+                 +-------+--------+
+                         |
+                         ↓
+                 +---------------+
+                 | Register File |
+                 |   8 × 8-bit   |
+                 +-------+-------+
+                         |
+                    A    |    B
+                    ↓    ↓
+                 +---------------+
+                 |    8-Bit ALU  |
+                 +-------+-------+
+                         |
+                         ↓
+                     Result
+                         |
+                         ↓
+                  Zero Flag
