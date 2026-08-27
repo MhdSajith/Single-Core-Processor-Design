@@ -44,7 +44,7 @@ The Control Unit is implemented using a Finite State Machine (FSM).
 ```text
 FETCH → DECODE → EXECUTE → FETCH
 
-### 4.Block Diagram
+## 4.Block Diagram
                  +----------------+
                  |  Control Unit  |
                  |      FSM       |
